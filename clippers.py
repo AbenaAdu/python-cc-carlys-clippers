@@ -21,3 +21,14 @@ for price in prices:
 #Average price of prices
 average_price = total_price / len(prices)
 print("Average Haircut Price: " + str(average_price))
+
+#New Prices 
+new_prices = [price - 5 for price in prices]
+
+#This loop generates the total revenue for the week based on prices and how many people did a style
+total_revenue = 0
+
+for i in range(len(hairstyles)):
+  total_revenue += (prices[i] * last_week[i]) 
+  
+print("Total Revenue: " + str(total_revenue))
