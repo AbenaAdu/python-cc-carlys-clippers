@@ -32,3 +32,9 @@ for i in range(len(hairstyles)):
   total_revenue += (prices[i] * last_week[i]) 
   
 print("Total Revenue: " + str(total_revenue))
+
+#Average daily revenue
+average_daily_revenue = total_revenue / 7
+
+#New List that lists cuts under $30
+cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)) if new_prices[i] < 30]
